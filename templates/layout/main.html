@@ -23,8 +23,16 @@
       <link href="{% static 'css/style.css' %}" rel="stylesheet" />
       <!-- responsive style -->
       <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+      
+      {% block css %}
+      {% endblock %}
    </head>
    <body>
+
+      {% block login %}
+      {% endblock login %}
+
+
 <section class="subscribe_section">
          <div class="container-fuild">
             <div class="box">
@@ -49,8 +57,7 @@
       </section>
 
 
-      {% block login %}
-      {% endblock login %}
+      
 
 
         <!-- footer start -->
